@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:admin123@localhost:5432/ex08?schema=public"
+  url      = env("DATABASE_URL")
 }
 
 model Reservation {
